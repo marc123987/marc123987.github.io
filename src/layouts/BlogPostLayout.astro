@@ -20,6 +20,7 @@ const {
 	pubDate,
 	updatedDate,
 	coverImageCredit,
+	repo,
 	headings,
 	slug,
 	remarkPluginFrontmatter,
@@ -80,6 +81,16 @@ const lastModified = dayjs(remarkPluginFrontmatter.lastModified)
 									class="inline-block text-primary dark:text-primary-dark"
 								/>
 								{remarkPluginFrontmatter.minutesRead}
+							</span>
+
+							<span>
+								<a
+									class="text-xl text-primary dark:text-primary-dark underline hover:underline underline-offset-4"
+									href="{}"
+									target="_blank"
+								>
+									Ver Repositorio
+								</a>
 							</span>
 						</div>
 

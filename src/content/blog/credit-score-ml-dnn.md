@@ -4,17 +4,10 @@ description: |
   Este proyecto implementa un modelo de Red neuronal profunda (DNN) para la clasificación del dataset de German Credit Data y se compara su rendimiento respecto a una red más moderna ResNet.
 pubDate: 'Aug 24 2025'
 coverImageCredit: ''
+repo: 'https://github.com/marc123987/credit-score-ml-dnn'
 ---
 
 Este proyecto implementa un modelo de Red neuronal profunda (DNN) para la clasificación del dataset de German Credit Data y se compara su rendimiento respecto a una red más moderna ResNet.
-
-<a
-  class="text-xl text-primary dark:text-primary-dark underline hover:underline underline-offset-4"
-  href="https://github.com/marc123987/credit-score-ml-dnn"
-  target="_blank"
->
-  Ver Repositorio
-</a>
 
 ## Descripción
 

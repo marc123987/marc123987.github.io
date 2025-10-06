@@ -4,17 +4,10 @@ description: |
   Este proyecto entrena un modelo Random Forest para la clasificación del dataset de Disease Prediction Using Machine Learning utilizando métodos de optimización como Optuna y Ray Tune para encontrar la mejor combinación de hiperparámetros y se compara el rendimiento obtenido para los hiperparámetros encontrados por cada método.
 pubDate: 'Aug 23 2025'
 coverImageCredit: ''
+repo: 'https://github.com/marc123987/optuna-ray-tune-ml'
 ---
 
 Este proyecto entrena un modelo Random Forest para la clasificación del dataset de Disease Prediction Using Machine Learning utilizando métodos de optimización como Optuna y Ray Tune para encontrar la mejor combinación de hiperparámetros y se compara el rendimiento obtenido para los hiperparámetros encontrados por cada método.
-
-<a
-  class="text-xl text-primary dark:text-primary-dark underline hover:underline underline-offset-4"
-  href="https://github.com/marc123987/optuna-ray-tune-ml"
-  target="_blank"
->
-  Ver Repositorio
-</a>
 
 ## Descripción
 

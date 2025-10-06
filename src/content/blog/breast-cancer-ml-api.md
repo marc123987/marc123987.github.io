@@ -4,17 +4,10 @@ description: |
   Este proyecto implementa un modelo de Machine Learning para la clasificación del dataset Breast Cancer usando Random Forest, con una API REST construida con Flask y configuración para despliegue en Kubernetes.
 pubDate: 'Aug 25 2025'
 coverImageCredit: ''
+repo: 'https://github.com/marc123987/breast-cancer-ml-api'
 ---
 
 Este proyecto implementa un modelo de Machine Learning para la clasificación del dataset Breast Cancer usando Random Forest, con una API REST construida con Flask y configuración para despliegue en Kubernetes.
-
-<a
-  class="text-xl text-primary dark:text-primary-dark underline hover:underline underline-offset-4"
-  href="https://github.com/marc123987/breast-cancer-ml-api"
-  target="_blank"
->
-  Ver Repositorio
-</a>
 
 ## Descripción
 
