@@ -21,6 +21,7 @@ export async function GET(context) {
 			// Compute RSS link from post `id`
 			// This example assumes all posts are rendered as `/blog/[id]` routes
 			link: `/blog/${post.id.replace('.md', '')}/`,
+			repo: post.data.repo,
 		})),
 	})
 }

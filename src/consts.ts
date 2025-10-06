@@ -20,6 +20,6 @@ export const SocialLinks = [
 export const WebsiteLinks = [
 	{
 		name: 'Página principal',
-		url: '/',
+		url: 'https://marc123987.github.io/',
 	},
 ]
