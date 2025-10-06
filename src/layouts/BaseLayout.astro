@@ -7,10 +7,9 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts'
 interface Props {
 	title?: string
 	description?: string
-	repo?: string
 }
 
-const { title, description, repo } = Astro.props
+const { title, description } = Astro.props
 
 import '@fontsource-variable/inter'
 import '@fontsource-variable/jetbrains-mono'
@@ -22,7 +21,6 @@ import '@fontsource-variable/jetbrains-mono'
 		<BaseHead
 			title={title || SITE_TITLE}
 			description={description || SITE_DESCRIPTION}
-			repo={repo || SITE_DESCRIPTION}
 		/>
 	</head>
 	<body
