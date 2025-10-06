@@ -1,0 +1,56 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro'
+import { SITE_BASE, SocialLinks } from '../consts'
+import { Icon } from 'astro-icon/components'
+import BlogCard from '../components/BlogCard.astro'
+import { getCollection } from 'astro:content'
+
+const posts = (await getCollection('blog'))
+	.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+	.slice(0, 4)
+---
+
+<BaseLayout>
+	<main
+		class="app-container flex flex-col gap-12 justify-center py-36 md:py-48 pt-44 md:pt-56 relative"
+	>
+		<div>
+			<p class="block text-3xl opacity-70 mt-9 mb-4">Bienvenido, soy</p>
+			<h1 class="text-8xl font-bold leading-none">Marcelo Retamal</h1>
+		</div>
+		<p class="text-2xl max-w-2xl font-light leading-normal">
+			He trabajado como Desarrollador de Software en C# .NET y me interesa aprender de herramientas de inteligencia artificial para poder incorporarlas en mi trabajo.
+		</p>
+		<p class="text-2xl max-w-2xl font-light leading-normal">
+			En mi trabajo como Desarrollador de Software me enfoqué principalmente en desarrollo de backend en arquitecturas de N capas de: APIs, algunas Azure Functions y algunas soluciones web.
+		</p>
+		<p class="text-2xl max-w-2xl font-light leading-normal">
+			En 2025 participé en un Bootcamp de Machine Learning en donde desarrollé en Python utilizando herramientas como Skicit-learn para entrenar diversos modelos, analizarlos y comparar su rendimiento con métricas, además de utilizar herramientas de optimización de hiperparámetros, implementación de redes neuronales como DNNs, autoencoders y redes convolucionales, y entrenamiento de modelos para el procesamiento de Lenguaje Natural, así como también se implementó un pipeline para poder utilizar contenedores de Docker, entre otras habilidades y herramientas aprendidas en el curso.
+		</p>
+		<p class="text-2xl max-w-2xl font-light leading-normal">
+			Mi objetivo actual es continuar mi desarrollo profesional en una labor que me permita continuar aprendiendo e integrando herramientas de inteligencia artificial en soluciones que agreguen valor a las personas.
+		</p>
+		<div class="flex flex-wrap gap-8">
+			{
+				SocialLinks.map((link) => (
+					<a
+						class="text-xl text-primary dark:text-primary-dark underline hover:underline underline-offset-4"
+						href={link.url}
+						target="_blank"
+					>
+						{link.name}
+					</a>
+				))
+			}
+		</div>
+	</main>
+
+	<!-- Recent Posts Section -->
+	<section class="app-container">
+		<h2 class="section-title">Proyectos</h2>
+		<div class="posts-grid-container">
+			{posts.map((post) => <BlogCard post={post} />)}
+		</div>
+	</section>
+
+</BaseLayout>
